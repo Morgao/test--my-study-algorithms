@@ -1,0 +1,398 @@
+http://morgaofreud.blogspot.com/2018/10/1-exercicio-1-fibonacci-da-forma-mais.html
+sábado, 27 de outubro de 2018
+ 1 exercicio 1 fibonacci da forma mais simples.
+Algoritmos e Linguagem de Programação
+Lista de exercícios
+Data de Entrega: 07/11/2018 Valor 1,0
+
+2 imagens da lógica que usei para resolver a questão na mão antes de codar ele.
+codei em C puro e C++
+
+
+1) Faça um programa que calcule a soma os 15 primeiros termos da Série de Fibonacci. 
+Os dois primeiros números da série deverão ser informados via teclado.
+ Ao final da execução do programa, mostrar:
+- Os Números da Série, a Soma e a Média dos números da série.
+Exemplo de uma Série de Fibonacci: 5, 6, 11, 17, 28, 45, 73 ...
+
+/* Comentarios - achei que iria usar o termo geral da série de fibonacci no caso não foi necessario
+essa é apenas uma forma de resolver a questão, tentei escrever os printf( todos em um só printf acabou dando um erro que não me recordo o porque então enumerei cada um dos printf, e cada uma das contas na mão se usar if/ incrementação, provavelmente posteriormente posto novas formas de resolver o mesmo problema usando recursos mais avançados!
+*/
+video de referencia caso alguem queria resolver usando a formula geral :
+IMPA - iniciação científica
+https://www.youtube.com/watch?v=QVlTuInyZKk
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+(primeiro código feito em Linguagem C)
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+/*
+Por > Morgao Freud
+matheus nakade
+contatomorgao@gmail.com
+
+Exercicios numero 01
+exemplo de como resolver com a fórmula geral da fibonacci
+IFG-2018/2 - Hallison
+
+*/
+int main() {
+
+    /*
+     a sequencia fibonacci sempre tem que declarar os dois primeiros termos de onde parte a sequencia
+     por isso na questão o professor não está ajudando dando 2 termos, sem os 2 termos seria uma P.A.
+     a lógica da fibonacci é sempre esta, se o primeiro numero é 10, e o segundo é 15,
+    o terceiro numero é a soma do primeiro numero com o segundo numero que no caso seria
+    F = a1 + a2; F = 10 + 15; F = 25. a sequencia por enquanto é {10,15,25,...} o proximo termo é a
+    soma de 25 + 15 = 40 entao a sequencia seria {10,15,25,40,...} o programa não pode funcionar apenas
+    para a fibonacci original que é {0,1,1,2,3,5,8,...} ele tem que funcionar para qualquer fibonacci
+    derivada dessa lógica. e no caso o professor vai testar 2 numeros fixos( exemplo primeiro termo como 10
+    e o segundo termo como 15) ai ele já sabe que resultado esperar da sequencia dos 15 numeros (ele pediu
+    para enumerar os 15 numeros e na sequencia (não pode ser aleatorio ou do ultimo numero digitado para o primeiro
+    tem que partir dos 2 primeiros que ele digitou e seguir no calculo do a3 até o a15, incluindo os 2 primerios
+    que ele mesmo digitou e os outros 13 que vc tem que calcular quais são eles
+    vai ser cout a1, cout a2, cout a3... cout a15, o resultado     da soma desses
+    15 numeros, da média desses 15 numeros.
+
+    vou perguntar o primeiro e segunto termo da sequencia (printf)
+     na sequencia vou guardar o valor do primeiro e do segundo termo da sequencia (scanf)
+    */
+   
+    int a01, a02, a03, a04, a05, a06, a07, a08, a09, a10, a11, a12, a13, a14, a15;
+    float media, soma;
+   
+    printf("Escreva o Primeiro termo da sequencia Fibonacci : ");
+    scanf("%d",&a01);
+    printf("Escreva o Segundo termo da sequencia Fibonacci : ");
+    scanf("%d",&a02);
+    a03 = a02 + a01;
+    a04 = a03 + a02;
+    a05 = a04 + a03;
+    a06 = a05 + a04;
+    a07 = a06 + a05;
+    a08 = a07 + a06;
+    a09 = a08 + a07;
+    a10 = a09 + a08;
+    a11 = a10 + a09;
+    a12 = a11 + a10;
+    a13 = a12 + a11;
+    a14 = a13 + a12;
+    a15 = a14 + a13;
+   
+    // aora estou fazendo a soma da sequencia, copiei igual ta escrito na declaração
+    // das variaveis apagando a virgunta e preenchendo com espaço antes o simbolo da soma e espaco depois.
+    // para efeito de comparação a soma dos 15 termos, com o a1 = 1 e o a2 = 1, a fibonacci clássica
+    // a soma tem que dar 1596
+   
+    soma = a01 + a02 + a03 + a04 + a05 + a06 + a07 + a08 + a09 + a10 + a11 + a12 + a13 + a14 + a15;
+   
+    // agora vou fazer a ultima etapa do exercicios que é a media dos numeros da serie.
+    // lembrar de declarar a variavel media como tipo float (flutuante, numero real) porque é um numero com virgula. quebrado
+    // e no ultimo printf, ou cout tem que declarar a variavel como tipo float tbm, nos outros printf ou cout
+    // era declarado apenas do tipo inteiro (int)
+   
+    media = (soma/15);
+// aqui eu percebi que além da variavel media ser do tipo float( tipo real) a variavel soma teria que ser do tipo
+// float tbm, somar todos numeros da sequencia da um numero inteiro. se a variavel soma estivar declarada como inteiro (int)
+// na hora de fazer a media o meu resultado vai sair sempre aredondado, no caso padrão para 106 nesse exercicio e na
+// linguagem c podemos usar outros formar para aredondar para baixo(chão) para cima (Céu) e um terceira que aredonda 0,5
+// até o numero ,5 aredonda pra baixo e acima de ,5 para cima... ( se não me enagano.
+   
+    printf("A Sequencia Fibonacci é : \n");   
+    printf("%d \n",a01);
+    printf("%d \n",a02);
+    printf("%d \n",a03);
+    printf("%d \n",a04);
+    printf("%d \n",a05);
+    printf("%d \n",a06);
+    printf("%d \n",a07);
+    printf("%d \n",a08);
+    printf("%d \n",a09);
+    printf("%d \n",a10);
+    printf("%d \n",a11);
+    printf("%d \n",a12);
+    printf("%d \n",a13);
+    printf("%d \n",a14);
+    printf("%d \n",a15);
+   
+
+   
+    printf("A soma da sequencia fibonaci e: ");
+    printf("%d \n",soma);
+   
+    printf("A media  da sequencia fibonaci e: ");
+    // para imprimir um numero do tipo float basta colocar %f, no caso coloquei %.1f o um representa o numero
+    // de casas decimais que eu quero. se for %.3f seria 106,400 (3 casas decimais)
+    printf("%.1f \n",media);
+/*
+1 pergunta (quais são os numeros da sequencia, digitando os 2 primeiros numeros ?)
+vou tomar como padrao o a1 = 1 e o a2 = 1 que é a sequencia normal da fibonacci
+Resposta
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
+610
+
+2 Pergunta qual a soma de toda a sequencia ?
+1596
+3 Pergunta qual é a média dos numeros da series fibonacci ?
+Resposta : 106,4
+
+
+*/
+
+
+   
+    system ("PAUSE");
+    return 0;
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Versão em Linguagem C++
+
+/*
+Por > Morgao Freud
+matheus nakade
+contatomorgao@gmail.com
+
+Exercicios numero 01
+exemplo de como resolver com a fórmula geral da fibonacci
+IFG-2018/2 - Hallison
+
+*/
+
+#include <iostream>     // std::cout, std::fixed
+#include <iomanip>      // std::setprecision usar precisão na media e soma valores tipo float
+
+
+
+using namespace std;
+
+int main() {
+
+
+
+   
+    /*
+     a sequencia fibonacci sempre tem que declarar os dois primeiros termos de onde parte a sequencia
+     por isso na questão o professor não está ajudando dando 2 termos, sem os 2 termos seria uma P.A.
+     a lógica da fibonacci é sempre esta, se o primeiro numero é 10, e o segundo é 15,
+    o terceiro numero é a soma do primeiro numero com o segundo numero que no caso seria
+    F = a1 + a2; F = 10 + 15; F = 25. a sequencia por enquanto é {10,15,25,...} o proximo termo é a
+    soma de 25 + 15 = 40 entao a sequencia seria {10,15,25,40,...} o programa não pode funcionar apenas
+    para a fibonacci original que é {0,1,1,2,3,5,8,...} ele tem que funcionar para qualquer fibonacci
+    derivada dessa lógica. e no caso o professor vai testar 2 numeros fixos( exemplo primeiro termo como 10
+    e o segundo termo como 15) ai ele já sabe que resultado esperar da sequencia dos 15 numeros (ele pediu
+    para enumerar os 15 numeros e na sequencia (não pode ser aleatorio ou do ultimo numero digitado para o primeiro
+    tem que partir dos 2 primeiros que ele digitou e seguir no calculo do a3 até o a15, incluindo os 2 primerios
+    que ele mesmo digitou e os outros 13 que vc tem que calcular quais são eles
+    vai ser cout a1, cout a2, cout a3... cout a15, o resultado     da soma desses
+    15 numeros, da média desses 15 numeros.
+
+    vou perguntar o primeiro e segunto termo da sequencia (printf)
+     na sequencia vou guardar o valor do primeiro e do segundo termo da sequencia (scanf)
+    */
+   
+    int a01, a02, a03, a04, a05, a06, a07, a08, a09, a10, a11, a12, a13, a14, a15;
+    float media, soma;
+   
+    cout << "Escreva o Primeiro termo da sequencia Fibonacci: ";
+    cin >> a01;
+    cout << "Escreva o Segundo termo da sequencia Fibonacci: ";
+    cin >> a02;
+   
+    a03 = a02 + a01;
+    a04 = a03 + a02;
+    a05 = a04 + a03;
+    a06 = a05 + a04;
+    a07 = a06 + a05;
+    a08 = a07 + a06;
+    a09 = a08 + a07;
+    a10 = a09 + a08;
+    a11 = a10 + a09;
+    a12 = a11 + a10;
+    a13 = a12 + a11;
+    a14 = a13 + a12;
+    a15 = a14 + a13;
+   
+
+    // aora estou fazendo a soma da sequencia, copiei igual ta escrito na declaração
+    // das variaveis apagando a virgunta e preenchendo com espaço antes o simbolo da soma e espaco depois.
+    // para efeito de comparação a soma dos 15 termos, com o a1 = 1 e o a2 = 1, a fibonacci clássica
+    // a soma tem que dar 1596
+   
+    soma = a01 + a02 + a03 + a04 + a05 + a06 + a07 + a08 + a09 + a10 + a11 + a12 + a13 + a14 + a15;
+   
+    // agora vou fazer a ultima etapa do exercicios que é a media dos numeros da serie.
+    // lembrar de declarar a variavel media como tipo float (flutuante, numero real) porque é um numero com virgula. quebrado
+    // e no ultimo printf, ou cout tem que declarar a variavel como tipo float tbm, nos outros printf ou cout
+    // era declarado apenas do tipo inteiro (int)
+   
+    media = (soma/15);
+   
+    // aqui eu percebi que além da variavel media ser do tipo float( tipo real) a variavel soma teria que ser do tipo
+    // float tbm, somar todos numeros da sequencia da um numero inteiro. se a variavel soma estivar declarada como inteiro (int)
+    // na hora de fazer a media o meu resultado vai sair sempre aredondado, no caso padrão para 106 nesse exercicio e na
+    // linguagem c podemos usar outros formar para aredondar para baixo(chão) para cima (Céu) e um terceira que aredonda 0,5
+    // até o numero ,5 aredonda pra baixo e acima de ,5 para cima... ( se não me enagano.
+   
+    cout << "A Sequencia Fibonacci e: \n";
+    cout << "\n" << a01 ;
+    cout << "\n" << a02 ;
+    cout << "\n" << a03 ;
+    cout << "\n" << a04 ;
+    cout << "\n" << a05 ;
+    cout << "\n" << a06 ;
+    cout << "\n" << a07 ;
+    cout << "\n" << a08 ;
+    cout << "\n" << a09 ;
+    cout << "\n" << a10 ;
+    cout << "\n" << a11 ;
+    cout << "\n" << a12 ;
+    cout << "\n" << a13 ;
+    cout << "\n" << a14 ;
+    cout << "\n" << a15 ;
+   
+    cout << "\n A soma da sequencia Fibonacci e: ";
+    cout << soma;
+   
+    // para imprimir um numero do tipo float basta colocar %f, no caso coloquei %.1f o um representa o numero
+    // de casas decimais que eu quero. se for %.3f seria 106,400 (3 casas decimais)
+    cout << "\n A media da sequencia Fibonacci e: ";
+    std::cout << std::fixed << std::setprecision(1) << media << "\n";
+
+
+
+   
+/*
+1 pergunta (quais são os numeros da sequencia, digitando os 2 primeiros numeros ?)
+vou tomar como padrao o a1 = 1 e o a2 = 1 que é a sequencia normal da fibonacci
+Resposta
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89
+144
+233
+377
+610
+
+2 Pergunta qual a soma de toda a sequencia ?
+1596
+3 Pergunta qual é a média dos numeros da series fibonacci ?
+Resposta : 106,4
+
+
+*/
+
+   
+   
+    system ("PAUSE");
+    return 0;
+}
+
+https://www.urionlinejudge.com.br/judge/pt/problems/view/1029
+Quase todo estudante de Ciência da Computação recebe em algum momento no início de seu curso de graduação algum problema envolvendo a sequência de Fibonacci. Tal sequência tem como os dois primeiros valores 0 (zero) e 1 (um) e cada próximo valor será sempre a soma dos dois valores imediatamente anteriores. Por definição, podemos apresentar a seguinte fórmula para encontrar qualquer número da sequência de Fibonacci:
+fib(0) = 0
+fib(1) = 1
+fib(n) = fib(n-1) + fib(n-2);
+Uma das formas de encontrar o número de Fibonacci é através de chamadas recursivas. Isto é ilustrado a seguir, apresentando a árvore de derivação ao calcularmos o valor fib(4), ou seja o 5º valor desta sequência:
+
+
+Desta forma,
+
+    fib(4) = 1+0+1+1+0 = 3
+    Foram feitas 8 calls, ou seja, 8 chamadas recursivas.
+
+Entrada
+A primeira linha da entrada contém um único inteiro N, indicando o número de casos de teste. Cada caso de teste contém um inteiro X (1 ≤ X ≤ 39) .
+Saída
+Para cada caso de teste de entrada deverá ser apresentada uma linha de saída, no seguinte formato: fib(n) = num_calls calls = result, aonde num_calls é o número de chamadas recursivas, tendo sempre um espaço antes e depois do sinal de igualdade, conforme o exemplo abaixo.
+Exemplo de Entrada 	Exemplo de Saída
+2
+5
+4
+	fib(5) = 14 calls = 5
+fib(4) = 8 calls = 3
+
+https://www.urionlinejudge.com.br/judge/pt/problems/view/1151
+
+A seguinte sequência de números 0 1 1 2 3 5 8 13 21... é conhecida como série de Fibonacci. Nessa sequência, cada número, depois dos 2 primeiros, é igual à soma dos 2 anteriores. Escreva um algoritmo que leia um inteiro N (N < 46) e mostre os N primeiros números dessa série.
+Entrada
+O arquivo de entrada contém um valor inteiro N (0 < N < 46).
+Saída
+Os valores devem ser mostrados na mesma linha, separados por um espaço em branco. Não deve haver espaço após o último valor.
+Exemplo de Entrada 	Exemplo de Saída
+5
+	0 1 1 2 3
+Agradecimentos a Cássio F.
+
+https://www.urionlinejudge.com.br/judge/pt/problems/view/1531
+
+A famosa sequência de Fibonacci pode ser definida da seguinte maneira:
+
+    Fib( 1 ) = Fib( 2 ) = 1
+    Fib( N ) = Fib( N-1 ) + Fib( N-2 ), para N > 2
+
+Sua tarefa é simples, calcular o valor do resto de Fib( Fib( N ) ) por M.
+Entrada
+A entrada é composta por vários casos de teste e termina com EOF. Cada caso de teste consiste de uma linha com dois inteiros N e M (1 ≤ N ≤ 109, 2 ≤ M ≤ 106).
+Saída
+Para cada caso de teste, imprima uma linha contendo um inteiro igual ao resto de Fib( Fib( N ) ) por M.
+ 
+Exemplo de Entrada 	Exemplo de Saída
+1 100
+2 100
+3 100
+4 100
+5 100
+5 2
+6 100
+	1
+1
+1
+2
+5
+1
+21
+
+https://www.urionlinejudge.com.br/judge/pt/problems/view/1176
+
+Faça um programa que leia um valor e apresente o número de Fibonacci correspondente a este valor lido. Lembre que os 2 primeiros elementos da série de Fibonacci são 0 e 1 e cada próximo termo é a soma dos 2 anteriores a ele. Todos os valores de Fibonacci calculados neste problema devem caber em um inteiro de 64 bits sem sinal.
+Entrada
+A primeira linha da entrada contém um inteiro T, indicando o número de casos de teste. Cada caso de teste contém um único inteiro N (0 ≤ N ≤ 60), correspondente ao N-esimo termo da série de Fibonacci.
+Saída
+Para cada caso de teste da entrada, imprima a mensagem "Fib(N) = X", onde X é o N-ésimo termo da série de Fibonacci.
+Exemplo de Entrada 	Exemplo de Saída
+3
+0
+4
+2
+	Fib(0) = 0
+Fib(4) = 3
+Fib(2) = 1
+Agradecimentos a Cassio F.
