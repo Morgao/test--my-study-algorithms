@@ -1,0 +1,28 @@
+http://morgaofreud.blogspot.com/2018/12/discursiva-2.html
+sábado, 1 de dezembro de 2018
+DISCURSIVA 2
+#include <stdio.h>
+#include <stdlib.h>
+    void main(){
+        int f1 = 0, f2 = 1, fn = 0, n;
+        fn = f1 + f2;
+        while(fn <= 50000){
+            fn++;
+           if (fn%3 == 0 &&  fn%7 == 0){
+          printf ("%d\n", fn);}
+            f1 = f2; f2 = fn; fn = f1 + f2; }
+    return 0;}
+
+https://www.programiz.com/c-programming/examples/fibonacci-series
+
+https://www.programiz.com/c-programming/examples/fibonacci-series
+
+https://forum.imasters.com.br/topic/540066-algoritmo-que-mostre-os-n%C3%BAmeros-%C3%ADmpares-de-1-a-100/
+
+http://www.educ.fc.ul.pt/icm/icm99/icm41/os100.htm
+
+http://www.educ.fc.ul.pt/icm/icm99/icm41/os100.htm
+
+https://www.vivaolinux.com.br/script/Multiplos-de-2-ou-3
+
+https://www.vivaolinux.com.br/script/Multiplos-de-2-ou-3 
