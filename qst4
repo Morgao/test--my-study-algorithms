@@ -1,0 +1,25 @@
+http://morgaofreud.blogspot.com/2018/11/questao-4.html
+sexta-feira, 30 de novembro de 2018
+questao 4
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int func (int n) {
+    if (n == 0)
+        return(1);
+    else
+        return(func(n-1)-n);
+}
+int main () {
+        int a,b;
+        printf("digite um valor inteiro:");
+        scanf("%d", &a);
+        b = func(a);
+        printf("%d \n", b);
+       
+
+    system ("PAUSE");
+    return 0;
+}
