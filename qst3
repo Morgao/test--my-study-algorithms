@@ -1,0 +1,24 @@
+http://morgaofreud.blogspot.com/2018/11/questao-3.html
+sexta-feira, 30 de novembro de 2018
+questao 3
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+void main () {
+    float renda;
+    printf("Digite a renda em R$:");
+    scanf("%f", &renda);
+   
+        if(renda<=18000)
+            printf("Isento");
+        else if (renda <= 25000)
+            printf("imposto devido: R$ %10.2f", 0.15 * renda - 1000);
+        else
+            printf("imposto devido:R$ %10.2f", 0.25 * renda - 1000);
+            return 0;
+
+    system ("PAUSE");
+    return 0;
+} 
