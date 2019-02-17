@@ -1,0 +1,9 @@
+http://morgaofreud.blogspot.com/2018/10/formatar-pen-drive-sd-com-problemas.html
+ formatar pen-drive sd com problemas
+pesqusiar diskpart (como adm)
+Select Disk 1
+(substitua o 1 pelo número referente ao seu pendrive)
+Clean
+Create partition primary
+Active
+Format fs=fat32 quick Assign Exit
