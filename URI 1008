@@ -1,0 +1,43 @@
+http://morgaofreud.blogspot.com/2019/02/uri-1008.html
+ URI 1008
+assim não
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int n1, n2;
+    float n3, x;
+   
+    scanf("%d",&n1);
+    scanf("%d",&n2);
+    scanf("%.2f",&n3);
+   
+    x = n2 * n3;
+   
+    printf("NUMBER = %d\n",n1);
+    printf("SALARY = U$ %.2f\n",x);
+   
+   
+    return 0;
+}
+
+
+assiim foi
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int n1, n2;
+    float n3, x;
+   
+    scanf("%d %d %f",&n1, &n2, &n3);
+   
+    x = n2 * n3;
+   
+    printf("NUMBER = %d\n",n1);
+    printf("SALARY = U$ %.2f\n",x);
+   
+   
+    return 0;
+} 
