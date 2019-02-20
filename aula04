@@ -1,0 +1,87 @@
+http://morgaofreud.blogspot.com/2010/08/aula-informatica-04.html
+segunda-feira, 23 de agosto de 2010
+Aula de informatica 04
+ 1)Para calcular a Area e o Perímetro de um retângulo, mostrando o resultado sendo inteiro positivo na tela final do programa.
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+float a,b,area,perimetro;
+printf("Enscreva a Base");
+scanf("%f",&b);
+printf("Enscreva a altura");
+scanf("%f",&a);
+area=b*a;
+perimetro=2*a+2*b;
+printf("Valor da Area %.2f e o Perimetro e %.2f",area,perimetro);
+getch();
+return 0;
+}
+
+Desafio: Para calcular o volume de uma esfera e mostrando o resultado sendo inteiro positivo na tela final do programa.
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+float v,r;
+printf("Enscreva a Raio");
+scanf("%f",&r);
+v=(4*3.14*r*r*r)/3;
+printf("Valor do Volume %.2f",v);
+getch();
+return 0;
+}
+
+Desafio: Para calcular número com resto e mostrando o resultado sendo positivo na tela final do programa.
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int x,y,r;
+x=7;
+y=3;
+r=x/y;
+printf("A Resposta e %d",r);
+getch();
+return(0);}
+
+Desafio: Para calcular número sem resto com vírgula mostrando o resultado sendo  positivo na tela final do programa.
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+float x,y,r;
+x=7;
+y=3;
+r=x/y;
+printf("A Resposta e %f",r);
+getch();
+return(0);}
+
+Desafio: Para calcular número sem resto e o número com o resto e mostrando o resultado sendo  positivo na tela final do programa.
+
+ #include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int x,y,r,resto;
+x=7;
+y=3;
+r=x/y;
+resto=x%y;
+printf("A Resposta e %d e o resto e %d",r,resto);
+getch();
+return(0);
+}
+
+ -------------------------------------------------------------------------------------------------------------
+
+Publicado originalmente em - sexta-feira, 13 de agosto de 2010
+
+atualização da referencia bibliográfica em -atualizado em 21/08/2017 - 03:10
+
+esse conteúdo ate onde eu me lembro é todo original, as perguntas feitas pelo professor em sala de aula, e as respostas, em muitos locais copio e colo partes do meu propio codigo para nao ter que reescrever boa parte dele, tem bibliotecas e ferramentas sobressalentes em varias partes, se tiver alguma parte do código que não é minha me indique e fale de onde é a referencia, acho que tem partes de calculadoras (científicas) que eu não sabia como fazer e copiei de um codigo de uma apostila, e que rodo o codigo mesmo sem entender as bibliotecas usadas, bom qualquer outra coisa é me informar ! 
