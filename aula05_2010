@@ -1,0 +1,55 @@
+http://morgaofreud.blogspot.com/2010/08/aula-05.html
+segunda-feira, 30 de agosto de 2010
+ Aula de informatica 05
+1)Escreva um programa para ler o valor de uma compra em uma loja, e que de quantas notas de cada Nota em dinheiro essa pessoa recebera de troco.mostrando o resultado sendo inteiro positivo na tela final do programa.
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int c,p,T,n100,n50,n20,n10,n5,n2,n1,r; 
+printf("Enscreva o Valor da Compra:");
+scanf("%d",&c);
+printf("Escreva o Valor Pago:");
+scanf("%d",&p);
+T=p-c;    
+n100=T/100; 
+r=T%100;
+n50=r/50;
+r=r%50;
+n20=r/20;
+r=r%20;
+n10=r/10;
+r=r%10;
+n5=r/5;
+r=r%5;
+n2=r/2;
+n1=r%2;
+printf("O T e %d:,notas de 100:%d,notas de 50:%d,notas de 20:%d,notas de 10:%d,notas de 5:%d,notas de 2:%d,moedas de 1:%d",T,n100,n50,n20,n10,n5,n2,n1);
+getch();
+return(0);
+}
+
+Desafio: Jogue um valor em segundos e calcule se tiver quantos minutos,horas e dias esses minutos representam.mostrando o resultado sendo inteiro positivo na tela final do programa.
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int c,Minutos,Horas,Dias;
+printf("Enscreva o Valor em segundos:");
+scanf("%d",&c);
+Minutos=60*c;
+Horas=3600*c;
+Dias=86400*c;
+printf("O Minutos e 60:%d:,Horas e 3600:%d,Dias e 86400:%d,",Minutos,Horas,Dias);
+getch();
+return(0);}
+
+ -------------------------------------------------------------------------------------------------------------
+
+Publicado originalmente em - sexta-feira, 13 de agosto de 2010
+
+atualização da referencia bibliográfica em -atualizado em 21/08/2017 - 03:10
+
+esse conteúdo ate onde eu me lembro é todo original, as perguntas feitas pelo professor em sala de aula, e as respostas, em muitos locais copio e colo partes do meu propio codigo para nao ter que reescrever boa parte dele, tem bibliotecas e ferramentas sobressalentes em varias partes, se tiver alguma parte do código que não é minha me indique e fale de onde é a referencia, acho que tem partes de calculadoras (científicas) que eu não sabia como fazer e copiei de um codigo de uma apostila, e que rodo o codigo mesmo sem entender as bibliotecas usadas, bom qualquer outra coisa é me informar ! 
