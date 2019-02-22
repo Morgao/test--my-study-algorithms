@@ -1,0 +1,452 @@
+http://morgaofreud.blogspot.com/2010/09/trab.html
+segunda-feira, 20 de setembro de 2010
+Trab. De Info.1
+1)
+
+#include<iostream>
+
+using namespace std;
+int main (int argc, char *argv[])
+{
+cout << "E precido fazer todos os exercicios para aprender.!" << endl;
+cout << "Pressione ENTER para sair do programa..." << endl;
+cin.get();
+return 0;
+}
+
+2)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,b,x,y;
+printf("Enscreva um numero Inteiro:");
+scanf("%d",&b);
+printf("Enscreva outro numero Inteiro:");
+scanf("%d",&a);
+printf("Voce digitou %d",b);
+printf(" e %d",a);
+getch();
+return 0;
+}
+
+3)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,x,y;
+printf("Enscreva um numero Inteiro:");
+scanf("%d",&a);
+x=a+1;
+y=a-1;
+printf("Seu Sucessor e: %d",x);
+printf(" e o Seu Antecessor e: %d",y);
+getch();
+return 0;
+}
+
+4)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,b,x;
+printf("Enscreva um numero Inteiro:");
+scanf("%d",&a);
+printf("Enscreva outro numero Inteiro:");
+scanf("%d",&b);
+x=a+b;
+printf(" %d + %d = %d ", a, b, x);
+getch();
+return 0;
+}
+
+5)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,b,x;
+printf("Enscreva um numero Inteiro:");
+scanf("%d",&a);
+printf("Enscreva outro numero Inteiro:");
+scanf("%d",&b);
+x=a-b;
+printf(" %d - %d = %d ", a, b, x);
+getch();
+return 0;
+}
+
+6)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,b,x;
+printf("Enscreva um numero Inteiro:");
+scanf("%d",&a);
+printf("Enscreva outro numero Inteiro:");
+scanf("%d",&b);
+x=a*b;
+printf(" %d * %d = %d ", a, b, x);
+getch();
+return 0;
+}
+
+7)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,b,x,y;
+printf("Enscreva um numero Inteiro:");
+scanf("%d",&a);
+printf("Enscreva outro numero Inteiro:");
+scanf("%d",&b);
+x=a/b;
+y=a%b;
+printf(" %d / %d = %d   e   %d %% %d = %d  ", a, b, x, a, b, y);
+getch();
+return 0;
+}
+
+8)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,x;
+printf("Enscreva o valor da despesa: ");
+scanf("%d",&a);
+x=a/(100/10);
+printf("Valor da gorgeta e: %d  e o valora da despesa e: %d", x, a);
+getch();
+return 0;
+}
+
+9)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,x;
+printf("Enscreva o valor do salario: ");
+scanf("%d",&a);
+x=(a/510);
+printf("Voce tem tantos salrios minimos: %d", x, a);
+getch();
+return 0;
+}
+
+10)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+float x,y,z,r;
+x=7;
+y=8;
+z=9;
+r=(x+y+z)/3;
+printf("A media entre esses numeros e: %.f",r);
+getch();
+return 0;
+}
+
+11)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+float x,y,z,a,r;
+printf("Enscreva um numero real:");
+scanf("%f",&x);
+printf("Enscreva outro numero real:");
+scanf("%f",&y);
+printf("Enscreva outro numero real:");
+scanf("%f",&z);
+printf("Enscreva outro numero real:");
+scanf("%f",&a);
+r=(x+y+z+a)/4;
+printf("A media e: %.1f",r);
+getch();
+return 0;
+}
+
+12)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+float x,y,z,a,r;
+x=1;
+y=2;
+z=3;
+a=4;
+r=(x+y+z+a)/10;
+printf("A media ponderada entre esses numeros e: %.f",r);
+getch();
+return 0;
+}
+
+13)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+float x,s,f;
+printf("O valor ad aplicacao:");
+scanf("%f",&x);
+s=2.5/100*x;
+f=x+s;
+printf("A media e: %.2f",f);
+getch();
+return 0;
+}
+
+14)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int b,a,p,A;
+printf("Enscreva o valor da base do retangulo:");
+scanf("%d",&b);
+printf("Enscreva a altura do retangulo:");
+scanf("%d",&a);
+p=(b+a)*2;
+A=b*a;
+printf("O perimetro e: %d e A area e: %d",p,A);
+getch();
+return 0;
+}
+
+15)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,b,x,y;
+printf("Enscreva o valor da base do triangulo:");
+scanf("%d",&a);
+printf("Enscreva a altura do triangulo:");
+scanf("%d",&b);
+a=(b*a)/2;
+printf("A area do triangulo e: %d", a);
+getch();
+return 0;
+}
+
+16)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int x,y,r,A;
+printf("Primeiro numero da P.A:");
+scanf("%d",&x);
+printf("Segundo numero da P.A:");
+scanf("%d",&y);
+r=(y-x);
+A=9*r+x;
+printf("O decimo termo da serie e: %d",A);
+getch();
+return 0;
+}
+
+17)
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int c,F;
+printf("De a temperatura em graus centigrados:");
+scanf("%d",&c);
+F=(9*c+160)/5;
+printf("e: %d",F);
+getch();
+return 0;
+}
+
+18)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int r,h,v;
+printf("De o raio da basa da lata de oleo:");
+scanf("%d",&r);
+printf("De a altura da lata de oleo:");
+scanf("%d",&h);
+v=3.14*(r*r)*h;
+printf("O volume da lata de oleo e: %d",v);
+getch();
+return 0;
+}
+
+19)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int x,m;
+printf("Enscreva o Valor da hora entre 1 ate 24:");
+scanf("%d",&x);
+m=x*60;
+printf("Minutos que ja se passaram:%d",m);
+getch();
+return(0);
+}
+
+20)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int x,s,f;
+printf("O valor do seu peso atual:");
+scanf("%d",&x);
+s=x*1000;
+f=x+s;
+printf("O valor do seu peso depois de ter engordado 12porcento  em gramas e: %d",f);
+getch();
+return 0;
+}
+
+21)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int x,s,f;
+printf("O valor do produto:");
+scanf("%d",&x);
+s=x*9/100;
+f=x-s;
+printf("O valor do produto com desconto: %d",f);
+getch();
+return 0;
+}
+
+22)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int x,s,f;
+x=500;
+s=x*6/100;
+f=x+s;
+printf("Apos 5 meses seu saldo e de: %d",f);
+getch();
+return 0;
+}
+
+23)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,b,c,s;
+printf("Digite o valor do lado a:");
+scanf("%d",&a);
+printf("Digite o valor do lado b:");
+scanf("%d",&b);
+printf("Digite o valor do lado c:");
+scanf("%d",&c);
+s=(a+b+c)/2;
+printf("A area do triangulo e de: %d",s);
+getch();
+return 0;
+}
+
+24)
+
+#include <stdio.h>
+#include <conio.h>
+#include <iostream>
+int main( )
+{
+float t,v,x,l;
+t=35;
+v=80;
+x=500;
+l=v/12;
+printf("Nessa viagem de automovel foram gastos : %.3f :litros aproximados ",l);
+getch();
+return 0;
+}
+
+25)
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,b,x,y;
+printf("Enscreva um numero representarivo para A:");
+scanf("%d",&b);
+printf("Enscreva outro numero representarivo para B:");
+scanf("%d",&a);
+printf("Voce digitou para A: %d :",b);
+printf("Voce digitou para A q  se fosse B: %d :",b);
+printf("Voce digitou para B e: %d :",a);
+printf("Voce digitou para B q  se fosse A: %d :",a);
+getch();
+return 0;
+}
+
+26)
+
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+int main()
+{
+float a,b,c,d,e,f,r,r1,r2,r3;
+a=1.5;
+b=4.0;
+c=2.0;
+d=3.0;
+e=1.2;
+f=4.3;
+r=((a*(c+d))/(b*(e+f)));
+r1=(pow(a,(b+c)))/(e+f)+d;
+r2=(a+(pow((c+d),2))/(pow(b,2))*d)*1/c;
+r3=(-b+sqrt(pow(b,2)-4*a*c))/(2*a);
+printf("Alternativa a: %1.f",r);
+printf("\nAlternativa b: %1.f",r1);
+printf("\nAlternativa c: %1.f",r2);
+printf("\nAlternativa d: %1.f",r3);
+getch();
+return(0);
+}
+ -------------------------------------------------------------------------------------------------------------
+
+Publicado originalmente em - sexta-feira, 13 de agosto de 2010
+
+atualização da referencia bibliográfica em -atualizado em 21/08/2017 - 03:10
+
+esse conteúdo ate onde eu me lembro é todo original, as perguntas feitas pelo professor em sala de aula, e as respostas, em muitos locais copio e colo partes do meu propio codigo para nao ter que reescrever boa parte dele, tem bibliotecas e ferramentas sobressalentes em varias partes, se tiver alguma parte do código que não é minha me indique e fale de onde é a referencia, acho que tem partes de calculadoras (científicas) que eu não sabia como fazer e copiei de um codigo de uma apostila, e que rodo o codigo mesmo sem entender as bibliotecas usadas, bom qualquer outra coisa é me informar ! 
