@@ -1,0 +1,77 @@
+http://morgaofreud.blogspot.com/2010/09/aula-de-informatica-02.html
+domingo, 26 de setembro de 2010
+Aula de informatica 02
+1) Escreva dois números,faca uma subtração dos números inteiros, mostrando o resultado sendo inteiro positivo ou negativo na tela final do programa.
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,b,s;
+printf("Enscreva um numero Inteiro:");
+scanf("%d",&a);
+printf("Enscreva outro numero Inteiro:");
+scanf("%d",&b);
+s=a-b;
+printf("A subtração desses numeros inteiros e:%d",s);
+getch();
+return 0;
+}
+
+2) Escreva dois números,faca a soma dos números inteiros, mostrando o resultado  e a soma sendo inteiro positivo na tela final do programa.
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,b,x;
+printf("Enscreva um numero Inteiro:");
+scanf("%d",&a);
+printf("Enscreva outro numero Inteiro:");
+scanf("%d",&b);
+x=a+b;
+printf(" %d + %d = %d ", a, b, x);
+getch();
+return 0;
+}
+
+3) Escreva dois números,faca a subtração dos números inteiros, mostrando o resultado  e a soma sendo inteiro positivo na tela final do programa.
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,b,x;
+printf("Enscreva um numero Inteiro:");
+scanf("%d",&a);
+printf("Enscreva outro numero Inteiro:");
+scanf("%d",&b);
+x=a-b;
+printf(" %d - %d = %d ", a, b, x);
+getch();
+return 0;
+}
+
+4) Escreva dois números,faca a multiplicação dos números inteiros, mostrando o resultado  e a soma sendo inteiro positivo na tela final do programa.
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,b,x;
+printf("Enscreva um numero Inteiro:");
+scanf("%d",&a);
+printf("Enscreva outro numero Inteiro:");
+scanf("%d",&b);
+x=a*b;
+printf(" %d * %d = %d ", a, b, x);
+getch();
+return 0;
+}
+ -------------------------------------------------------------------------------------------------------------
+
+Publicado originalmente em - sexta-feira, 13 de agosto de 2010
+
+atualização da referencia bibliográfica em -atualizado em 21/08/2017 - 03:10
+
+esse conteúdo ate onde eu me lembro é todo original, as perguntas feitas pelo professor em sala de aula, e as respostas, em muitos locais copio e colo partes do meu propio codigo para nao ter que reescrever boa parte dele, tem bibliotecas e ferramentas sobressalentes em varias partes, se tiver alguma parte do código que não é minha me indique e fale de onde é a referencia, acho que tem partes de calculadoras (científicas) que eu não sabia como fazer e copiei de um codigo de uma apostila, e que rodo o codigo mesmo sem entender as bibliotecas usadas, bom qualquer outra coisa é me informar ! 
