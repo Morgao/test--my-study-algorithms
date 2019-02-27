@@ -1,0 +1,74 @@
+http://morgaofreud.blogspot.com/2010/09/de-info.html
+segunda-feira, 27 de setembro de 2010
+                        Trab. De Info.2
+1)
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+float x,n,a;
+printf("Digite um numero:");
+scanf("%f",&x);
+if(x >20)
+{
+n=x;
+}
+a=0;
+printf(" Esse numero e maior que 20 e e: %.2f",n,a);
+getch();
+return(0);
+}
+
+2)
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int n;
+printf("Digite um numero:");
+scanf("%d",&n);
+if((n%2)==0)
+{
+printf(" O numero e par",n);
+}
+else
+{
+printf(" O numero e impar",n);
+}
+getch();
+return(0);
+}
+
+3)
+#include <stdio.h>
+#include <conio.h>
+int main ()
+{
+int x;
+printf("Digite um numero:");
+scanf("%d",&x);
+if(x<0)
+{
+printf("O numero e: NEGATIVO", x);
+}
+else
+if ( x==0)
+{
+printf("O Numero e: NULO", x);
+}
+
+else
+{
+printf("O numero e: POSITIVO", x);
+}
+getch();
+return(0);
+}
+
+ -------------------------------------------------------------------------------------------------------------
+
+Publicado originalmente em - sexta-feira, 13 de agosto de 2010
+
+atualização da referencia bibliográfica em -atualizado em 21/08/2017 - 03:10
+
+esse conteúdo ate onde eu me lembro é todo original, as perguntas feitas pelo professor em sala de aula, e as respostas, em muitos locais copio e colo partes do meu propio codigo para nao ter que reescrever boa parte dele, tem bibliotecas e ferramentas sobressalentes em varias partes, se tiver alguma parte do código que não é minha me indique e fale de onde é a referencia, acho que tem partes de calculadoras (científicas) que eu não sabia como fazer e copiei de um codigo de uma apostila, e que rodo o codigo mesmo sem entender as bibliotecas usadas, bom qualquer outra coisa é me informar ! 
