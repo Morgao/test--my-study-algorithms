@@ -1,0 +1,77 @@
+http://morgaofreud.blogspot.com/2010/09/aula-de-informatica-07.html
+segunda-feira, 27 de setembro de 2010
+Aula de informatica 07
+1)      Como saber se um numero é par ou impar sabendo que se adivisao tiver resto 1 ela sera impar se for 0 é par.
+
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int n;
+printf("Digite um numero:");
+scanf("%d",&n);
+if((n%2)==0)
+{
+printf(" O numero e par",n);
+}
+else
+{
+printf(" O numero e impar",n);
+}
+getch();
+return(0);
+}
+
+2)      Se a nota for maior ou igual  a 8 muda pra 10, se não continua normal.
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int nota;
+printf("Digite uma Nota:");
+scanf("%d",&nota);
+if(nota >=8)
+{
+nota=10;
+}
+printf(" A nova nota e: %d",nota);
+getch();
+return(0);
+}
+
+3)      Faca um programa que pede para um usuario 4 notas calcular a media do  aluno. O programa deve tambem esrer”aprovado” ou “ reprovado” se a nota for >6.
+
+#include <stdio.h>
+#include <conio.h>
+int main( )
+{
+int a,b,c,z,s;
+printf("Digite uma nota:");
+scanf("%d",&a);
+printf("Digite uma nota:");
+scanf("%d",&b);
+printf("Digite uma nota:");
+scanf("%d",&c);
+printf("Digite uma nota:");
+scanf("%d",&z);
+s=(a+b+c+z)/4;
+printf("A media do aluno e: %d",s);
+if(s>6)
+{
+printf(" \n>>O aluno foi aprovado ",s);
+}
+else
+{
+printf(" \n>>O aluno foi Reprovado",s);
+}
+getch();
+return(0);
+}
+ -------------------------------------------------------------------------------------------------------------
+
+Publicado originalmente em - sexta-feira, 13 de agosto de 2010
+
+atualização da referencia bibliográfica em -atualizado em 21/08/2017 - 03:10
+
+esse conteúdo ate onde eu me lembro é todo original, as perguntas feitas pelo professor em sala de aula, e as respostas, em muitos locais copio e colo partes do meu propio codigo para nao ter que reescrever boa parte dele, tem bibliotecas e ferramentas sobressalentes em varias partes, se tiver alguma parte do código que não é minha me indique e fale de onde é a referencia, acho que tem partes de calculadoras (científicas) que eu não sabia como fazer e copiei de um codigo de uma apostila, e que rodo o codigo mesmo sem entender as bibliotecas usadas, bom qualquer outra coisa é me informar ! 
